@@ -1,0 +1,68 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "password": "pass1",
+            "name": "Иван Иванов",
+            "avatar": "default-avatar.jpg",
+            "bio": "Привет! Я использую Telegram-like Messenger",
+            "lastSeen": "online"
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "pass2",
+            "name": "Мария Петрова",
+            "avatar": "default-avatar.jpg",
+            "bio": "Тестирую новый мессенджер",
+            "lastSeen": "2023-05-15T14:30:00Z"
+        }
+    ],
+    "chats": [
+        {
+            "id": 1,
+            "name": "Личный чат",
+            "type": "private",
+            "participants": [1, 2],
+            "lastMessage": "Как дела?",
+            "lastMessageTime": "2023-05-15T14:35:00Z",
+            "unreadCount": 2
+        },
+        {
+            "id": 2,
+            "name": "Рабочая группа",
+            "type": "group",
+            "participants": [1, 2, 3],
+            "lastMessage": "Совещание в 15:00",
+            "lastMessageTime": "2023-05-15T12:45:00Z",
+            "unreadCount": 0
+        }
+    ],
+    "messages": [
+        {
+            "id": 1,
+            "chatId": 1,
+            "senderId": 2,
+            "text": "Привет!",
+            "time": "2023-05-15T14:30:00Z",
+            "status": "read"
+        },
+        {
+            "id": 2,
+            "chatId": 1,
+            "senderId": 1,
+            "text": "Привет! Как дела?",
+            "time": "2023-05-15T14:32:00Z",
+            "status": "read"
+        },
+        {
+            "id": 3,
+            "chatId": 1,
+            "senderId": 2,
+            "text": "Все хорошо, спасибо!",
+            "time": "2023-05-15T14:35:00Z",
+            "status": "delivered"
+        }
+    ]
+}
