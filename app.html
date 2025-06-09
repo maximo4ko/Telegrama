@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram-like Messenger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Боковая панель с чатами -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="assets/default-avatar.jpg" alt="Аватар" class="avatar">
+                    <span class="username">Пользователь</span>
+                </div>
+                <button class="settings-btn">⚙️</button>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            
+            <div class="chat-list">
+                <!-- Список чатов будет загружаться динамически -->
+            </div>
+        </div>
+        
+        <!-- Основное окно чата -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-info">
+                    <img src="assets/default-avatar.jpg" alt="Аватар чата" class="avatar">
+                    <span class="chat-name">Выберите чат</span>
+                </div>
+                <div class="chat-actions">
+                    <button class="search-btn">🔍</button>
+                    <button class="menu-btn">⋮</button>
+                </div>
+            </div>
+            
+            <div class="messages-container">
+                <!-- Сообщения будут загружаться динамически -->
+                <div class="empty-chat">
+                    <p>Выберите чат для начала общения</p>
+                </div>
+            </div>
+            
+            <div class="message-input">
+                <textarea placeholder="Напишите сообщение..."></textarea>
+                <button class="send-btn">Отправить</button>
+            </div>
+        </div>
+        
+        <!-- Настройки профиля (скрыты по умолчанию) -->
+        <div class="settings-panel hidden">
+            <div class="settings-header">
+                <h2>Настройки</h2>
+                <button class="close-settings">×</button>
+            </div>
+            
+            <div class="settings-content">
+                <div class="profile-settings">
+                    <h3>Профиль</h3>
+                    <div class="avatar-upload">
+                        <img src="assets/default-avatar.jpg" alt="Аватар" class="avatar-large">
+                        <button class="change-avatar">Изменить фото</button>
+                    </div>
+                    <form>
+                        <label>Имя</label>
+                        <input type="text" value="Пользователь">
+                        
+                        <label>Логин</label>
+                        <input type="text" value="user123">
+                        
+                        <label>О себе</label>
+                        <textarea>Привет! Я использую Telegram-like Messenger</textarea>
+                        
+                        <button type="submit" class="save-btn">Сохранить</button>
+                    </form>
+                </div>
+                
+                <div class="privacy-settings">
+                    <h3>Приватность</h3>
+                    <!-- Настройки приватности -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
